@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - Online Design Shop</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            font-size: 16px; 
+            line-height: 1.6; 
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        h1 {
+            font-family: 'Georgia', serif;
+            font-size: 2.5rem; 
+            color: #f11212;
+            animation: slideInDown 1s ease-out;
+        }
+
+        h2 {
+            font-family: 'Verdana', sans-serif;
+            font-size: 1.8rem;
+            color: #df7e7e;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        h3 {
+            font-family: 'Tahoma', sans-serif;
+            font-size: 1.6rem; 
+            color: #b46969; 
+            font-weight: bold; 
+            animation: fadeInUp 2s ease-in-out;
+        }
+
+        h4 {
+            font-family: 'Tahoma', sans-serif;
+            font-size: 1.4rem; 
+            color: #a18080; 
+            font-weight: bold; 
+            animation: fadeInUp 2s ease-in-out;
+        }
+
+        p {
+            font-size: 1rem;
+            font-family: 'Tahoma', sans-serif;
+            color: #555;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        header {
+            background: #b4cd13;
+            color: #160505;
+            padding: 10px 0;
+            text-align:center;
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        main {
+            padding: 20px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        footer {
+            background: #b4cd13;
+            color: #160505;
+            text-align:left;
+            padding: 10px 0;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .product {
+            margin-bottom: 20px;
+            opacity: 0;
+            animation: slideInUp 1s forwards;
+        }
+
+        .product:nth-child(1) {
+            animation-delay: 0s;
+        }
+
+        .product:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+
+        .product:nth-child(3) {
+            animation-delay: 0.4s;
+        }
+
+        .product:nth-child(4) {
+            animation-delay: 0.6s;
+        }
+
+        .product img {
+            width: 300px;
+            height: 200px;
+            transition: transform 0.3s ease;
+            opacity: 0;
+            animation: fadeInUp 1.5s forwards;
+        }
+
+        .product img:hover {
+            transform: scale(1.05);
+        }
+
+        footer nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        footer nav ul li {
+            margin-right: 20px;
+        }
+
+        footer nav ul li a {
+            color: #160505;
+            text-decoration: none;
+        }
+
+        footer nav ul li a:hover {
+            color: #f11212;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        @keyframes slideInDown {
+            0% { transform: translateY(-100%); }
+            100% { transform: translateY(0); }
+        }
+
+        @keyframes slideInUp {
+            0% { transform: translateY(50px); opacity: 0; }
+            100% { transform: translateY(0); opacity: 1; }
+        }
+
+        @keyframes fadeInUp {
+            0% { opacity: 0; transform: translateY(30px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Shop</h1>
+    </header>
+    <main>
+        <h2>Available Products</h2>
+        <div class="product">
+            <h3>1. Logos</h3>
+            <h4>1.1-Company logos</h4>
+            <img src="https://www.toastbranding.co.uk/wp-content/uploads/image-based-logos.jpg" alt="Product" width="300" height="200">
+            <p>From $20 upwards</p>
+            <button>
+                <a href="order.html">Buy Now</a>
+            </button>
+        </div>
+
+        <div class="product">
+            <h3>2. Planners</h3>
+            <h4>2.1-monthly planners</h4>
+            <img src="https://static.wixstatic.com/media/e209d0_b0dc53c8b81b49e08166c8332881b648~mv2.jpg/v1/fill/w_480,h_480,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/e209d0_b0dc53c8b81b49e08166c8332881b648~mv2.jpg" alt="Product" width="300" height="200">
+            <p>$11.7</p>
+            <button>
+                <a href="order.html">Buy Now</a>
+            </button>
+            <h4>2.2-year planners</h4>
+            <img src="https://papertrailplanners.com/wp-content/uploads/2024/10/1-d-petals-in-time-1.png" alt="Product" width="300" height="200">
+            <p>$13.4</p>
+            <button>
+                <a href="order.html">Buy Now</a>
+            </button>
+            <h4>2.3-Journals</h4>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjnfg5uL8q7ArxasWwEnskOQMFVYltfEu1JQ&s" alt="Product" width="300" height="200">
+            <p>$15</p>
+            <button>
+                <a href="order.html">Buy Now</a>
+            </button>
+        </div>
+
+        <div class="product">
+            <h3>3. Graphic Templates</h3>
+            <h4>3.1-Business Cards</h4>
+            <img src="https://images.imprint.com/image/upload/f_auto,q_100/c_pad,w_800,h_800,b_rgb:ffffff/shop_images/product/ren_62e05e0225d9d_Standard_Business_Cards_1658871298.jpg" alt="Product" width="300" height="200">
+            <p>From $10 upwards</p>
+            <button>
+                <a href="order.html">Buy Now</a>
+            </button>
+            <h4>3.2-Social Media Post Template</h4>
+            <img src="https://brandpacks.com/wp-content/uploads/2023/02/best-social-media-templates-for-adobe-illustrator.jpg" alt="Product" width="300" height="200">
+            <p>From $15 upwards</p>
+            <button>
+                <a href="order.html">Buy Now</a>
+            </button>
+            <h4>3.3-Poster Template</h4>
+            <img src="https://static.vecteezy.com/system/resources/previews/002/186/442/non_2x/brochure-design-cover-modern-layout-annual-report-poster-flyer-in-a4-with-colorful-triangles-set-vector.jpg" alt="Product" width="300" height="200">
+            <p>From $18 upwards</p>
+            <button>
+                <a href="order.html">Buy Now</a>
+            </button>
+        </div>
+
+        <div class="product">
+            <h3>4. Website Design</h3>
+            <img src="https://html.design/wp-content/uploads/2024/01/non-profit-website-template-600x800.jpg" alt="Product" width="300" height="200">
+            <p>From $50 upwards</p>
+            <button>
+                <a href="order.html">Buy Now</a>
+            </button>
+        </div>
+    </main>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="order.html">Order</a></li>
+            </ul>
+        </nav>
+        <p>&copy; 2025 Online Design Shop. All rights reserved.</p>
+    </footer>
+</body>
+</html>

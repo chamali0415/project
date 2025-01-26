@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - Online Design Shop</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        h1 {
+            font-family: 'Georgia', serif;
+            font-size: 2.5rem; 
+            color: #f11212;
+            animation: slideInDown 1s ease-out;
+        }
+
+        h3 {
+            font-family: 'Verdana', sans-serif;
+            font-size: 1.8rem;
+            color: #df7e7e;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        header {
+            background: #b4cd13;
+            color: #160505;
+            padding: 10px 0;
+            text-align:center;
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        main {
+            padding: 20px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        footer {
+            background: #b4cd13;
+            color: #160505;
+            text-align:left;
+            padding: 10px 0;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .product {
+            margin-bottom: 20px;
+            opacity: 0;
+            animation: slideInUp 1s forwards;
+        }
+
+        .product:nth-child(1) {
+            animation-delay: 0s;
+        }
+
+        .product:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+
+        .product:nth-child(3) {
+            animation-delay: 0.4s;
+        }
+
+        .product:nth-child(4) {
+            animation-delay: 0.6s;
+        }
+
+        .product img {
+            width: 300px;
+            height: 200px;
+            transition: transform 0.3s ease;
+        }
+
+        .product img:hover {
+            transform: scale(1.05);
+        }
+
+        footer nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+        }
+
+        footer nav ul li {
+            margin-right: 20px;
+        }
+
+        footer nav ul li a {
+            color: #160505;
+            text-decoration: none;
+        }
+
+        footer nav ul li a:hover {
+            color: #f11212;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        @keyframes slideInDown {
+            0% { transform: translateY(-100%); }
+            100% { transform: translateY(0); }
+        }
+
+        @keyframes slideInUp {
+            0% { transform: translateY(50px); opacity: 0; }
+            100% { transform: translateY(0); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Product Details</h1>
+    </header>
+    <main>
+        <div class="product">
+            <h3>1. Logos</h3>
+            <img src="https://www.toastbranding.co.uk/wp-content/uploads/image-based-logos.jpg" alt="Product 1">
+            <p>"Logos are the visual heartbeat of a brand, making an impression in a single glance."</p>
+        </div>
+
+        <div class="product">
+            <h3>2. Planners</h3>
+            <img src="https://m.media-amazon.com/images/I/61yF8f4gbjL._AC_SL1500_.jpg" alt="Product 2">
+            <p>"Planners turn chaos into clarity, one page at a time."</p>
+        </div>
+
+        <div class="product">
+            <h3>3. Graphic Templates</h3>
+            <img src="https://static.vecteezy.com/system/resources/previews/001/952/994/non_2x/business-digital-marketing-post-template-free-vector.jpg" alt="Product 3">
+            <p>"Graphic templates: where your ideas take shape effortlessly."</p>
+        </div>
+
+        <div class="product">
+            <h3>4. Website Design</h3>
+            <img src="https://html.design/wp-content/uploads/2024/01/non-profit-website-template-600x800.jpg" alt="Product 4">
+            <p>"Website design is the art of blending beauty with functionality to craft seamless digital experiences."</p>
+        </div>
+    </main>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+            </ul>
+        </nav>
+        <p>&copy; 2025 Online Design Shop. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Online Design Shop</title>
+    <link rel="stylesheet" href="css/forms.css">
+</head>
+<body>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            font-size: 16px; 
+            line-height: 1.6; 
+        }
+
+        h1 {
+            font-family: 'Georgia', serif;
+            font-size: 2.5rem; 
+            color: #f11212;
+        }
+ 
+ header {
+     background: #b4cd13;
+     color: #160505;
+     padding: 10px 0;
+     text-align:center;
+ }
+ 
+ main {
+     padding: 20px;
+ }
+ 
+ footer {
+     background: #b4cd13;
+     color: #160505;
+     text-align:left;
+     padding: 10px 0;
+ }
+ form {
+     max-width: 500px;
+     margin: 0 auto;
+     padding: 20px;
+     border: 1px solid #ccc;
+     border-radius: 5px;
+     background-color: #f9f9f9;
+ }
+ 
+ form label {
+     display: block;
+     margin: 10px 0 5px;
+ }
+ 
+ form input, form textarea, form button {
+     width: 100%;
+     padding: 10px;
+     margin-bottom: 10px;
+ }   
+     </style>
+    <header>
+        <h1>Register</h1>
+    </header>
+    <main>
+        <form action="php/register.php" method="post" id="registerForm">
+            <label for="username">Choose a Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Choose a Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Register</button>
+        </form>
+    </main>
+    <footer>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="product.html">product</a></li>
+        <p>&copy; 2025 Online Design Shop. All rights reserved.</p>
+    </footer>
+</body>
+</html>
